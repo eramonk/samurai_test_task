@@ -56,7 +56,7 @@
                               sex :sex
                               born_date :born_date
                               address :address
-                              policy_number :polisy_number]}]
+                              policy_number :policy_number]}]
   (sql/update! db :patients
                (into {} (filter (fn [[k v]] (some? v)) {:sex sex :born_date born_date :address address}))
                ["first_name=? and last_name=? and father_name=? and policy_number=?"
@@ -67,4 +67,13 @@
 ;;(add-patient! pat3)
 ;; (get-patients)
 ;; (get-patient)
+
+
+
+
+
+
+
+
+
 

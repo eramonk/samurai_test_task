@@ -1,7 +1,8 @@
 (ns samurai-test-task.core
   (:require [clojure.java.jdbc :as sql]
             [compojure.core :refer :all]
-            [compojure.route :as route])
+            [compojure.route :as route]
+            [ring.middleware.multipart-params :as multipart-params])
   (:use [ring.adapter.jetty]
         [samurai-test-task.db.core]
         [clojure.data.json :as json]))
@@ -19,14 +20,17 @@
   (remove-patient! (Integer. (:id params))))
 
 (defn create-patient [req]
-  (str req))
+  (add-patient! (json/read-str (slurp (:body req)) :key-fn keyword)))
 
-(defroutes my-routes
+(defn update-patient [req]
+  (update-patient! (json/read-str (slurp (:body req)) :key-fn keyword)))
+
+(defroutes app-routes
   (GET "/patients" [] all-patients)
   (GET "/patient/:id" [] patient-json)
   (DELETE "/patient/:id" [] delete-patient)
   (POST "/patient/create" [] create-patient)
-  )
+  (POST "/patient/update" [] update-patient))
 
 (defn handler [request]
   {:status 200
@@ -34,7 +38,7 @@
    :body (str request)})
 
 (defn -main [& args]
-  (run-jetty #'my-routes {:port 3000}))
+  (run-jetty app-routes {:port 3000}))
 
 
 
