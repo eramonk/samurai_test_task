@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS patients(first_name varchar(255), last_name varchar(255), father_name varchar(255), born_date varchar(255), sex char(1), address varchar(255), polisy_number bigint PRIMARY KEY);
