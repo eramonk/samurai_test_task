@@ -62,9 +62,9 @@
                ["first_name=? and last_name=? and father_name=? and policy_number=?"
                 first_name last_name father_name policy_number]))
 
-(add-patient! pat)
-(add-patient! pat2)
-(add-patient! pat3)
-(get-patients)
-(get-patient)
+;;(add-patient! pat)
+;;(add-patient! pat2)
+;;(add-patient! pat3)
+;; (get-patients)
+;; (get-patient)
 

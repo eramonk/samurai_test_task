@@ -3,12 +3,30 @@
             [compojure.core :refer :all]
             [compojure.route :as route])
   (:use [ring.adapter.jetty]
-        [samurai-test-task.db.core]))
+        [samurai-test-task.db.core]
+        [clojure.data.json :as json]))
 
-(defn all-patients [request] (get-patients))
+
+(defn all-patients [request]
+  ;;(json/write-str (get-patients))
+  (str request)
+  )
+
+(defn patient-json [{:keys [params]}]
+  (json/write-str (get-patient (Integer. (:id params)))))
+
+(defn delete-patient [{:keys [params]}]
+  (remove-patient! (Integer. (:id params))))
+
+(defn create-patient [req]
+  (str req))
+
 (defroutes my-routes
-  (GET "/all" [] all-patients)
-  (GET "/bar" [] "Hello Bar"))
+  (GET "/patients" [] all-patients)
+  (GET "/patient/:id" [] patient-json)
+  (DELETE "/patient/:id" [] delete-patient)
+  (POST "/patient/create" [] create-patient)
+  )
 
 (defn handler [request]
   {:status 200

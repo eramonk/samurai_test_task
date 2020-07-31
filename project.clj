@@ -9,7 +9,8 @@
                  [org.clojure/java.jdbc "0.7.11"]
                  [ring/ring-core "1.6.3"]
                  [ring/ring-jetty-adapter "1.6.3"]
-                 [compojure "1.6.1"]]
+                 [compojure "1.6.1"]
+                 [org.clojure/data.json "1.0.0"]]
   :plugins [[migratus-lein "0.7.3"]
             [lein-ring "0.12.5"]]
   :ring {:handler ring.core/handler}
