@@ -19,7 +19,7 @@
           :born_date "17/06/1983"
           :sex "M"
           :address "Ozero Lenevoe 66"
-          :polisy_number 123456
+          :policy_number 123456
           })
 
 (def pat2 {:first_name "Ramon"
@@ -28,7 +28,7 @@
           :born_date "17/06/1983"
           :sex "M"
           :address "Ozero Lenevoe 66"
-          :polisy_number 123456
+          :policy_number 123456
            })
 
 (def pat3 {:first_name "Ramon"
@@ -37,7 +37,7 @@
           :born_date "17/06/1987"
           :address "Ozero Lenevoe 84"
            :sex nil
-          :polisy_number 123
+          :policy_number 123
           })
 
 
@@ -56,14 +56,15 @@
                               sex :sex
                               born_date :born_date
                               address :address
-                              polisy_number :polisy_number]}]
+                              policy_number :polisy_number]}]
   (sql/update! db :patients
                (into {} (filter (fn [[k v]] (some? v)) {:sex sex :born_date born_date :address address}))
-               ["first_name=? and last_name=? and father_name=? and polisy_number=?"
-                first_name last_name father_name polisy_number]))
+               ["first_name=? and last_name=? and father_name=? and policy_number=?"
+                first_name last_name father_name policy_number]))
 
-;;(add-patient! pat)
-;;(add-patient! pat2)
-;;(add-patient! pat3)
-;;(get-patients)
+(add-patient! pat)
+(add-patient! pat2)
+(add-patient! pat3)
+(get-patients)
+(get-patient)
 
