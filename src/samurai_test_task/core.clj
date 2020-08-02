@@ -1,4 +1,5 @@
 (ns samurai-test-task.core
+  (:gen-class)
   (:require [clojure.java.jdbc :as sql]
             [compojure.core :refer :all]
             [compojure.route :as route]
@@ -31,11 +32,6 @@
   (DELETE "/patient/:id" [] delete-patient)
   (POST "/patient/create" [] create-patient)
   (POST "/patient/update" [] update-patient))
-
-(defn handler [request]
-  {:status 200
-   :headers {"Content-Type" "text/html"}
-   :body (str request)})
 
 (defn -main [& args]
   (run-jetty app-routes {:port 3000}))

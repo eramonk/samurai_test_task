@@ -35,7 +35,7 @@
           :last_name "Akh"
           :father_name "Rinatovich"
           :born_date "17/06/1987"
-          :address "Ozero Lenevoe 84"
+          :address "Ozero Lenevoe 555"
            :sex nil
           :policy_number 123
           })
@@ -67,6 +67,9 @@
 ;;(add-patient! pat3)
 ;; (get-patients)
 ;; (get-patient)
+
+;;(update-patient! pat3)
+
 
 
 
