@@ -34,7 +34,7 @@
   (POST "/patient/update" [] update-patient))
 
 (defn -main [& args]
-  (run-jetty app-routes {:port 3005}))
+  (run-jetty app-routes {:port 3000}))
 
 
 
