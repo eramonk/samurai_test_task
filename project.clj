@@ -10,7 +10,8 @@
                  [ring/ring-core "1.6.3"]
                  [ring/ring-jetty-adapter "1.6.3"]
                  [compojure "1.6.1"]
-                 [org.clojure/data.json "1.0.0"]]
+                 [org.clojure/data.json "1.0.0"]
+                 [reagent "1.0.0-alpha2"]]
   :plugins [[migratus-lein "0.7.3"]
             [lein-ring "0.12.5"]]
   :ring {:handler ring.core/handler}
