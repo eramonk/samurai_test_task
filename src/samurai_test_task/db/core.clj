@@ -2,7 +2,7 @@
   (:require [clojure.java.jdbc :as sql]
                        ))
 (def db {:subprotocol "postgresql"
-         :subname "//localhost/postgresdb"
+         :subname "//localhost/postgresd"
          :user "admin"
          :password "admin"
          })
