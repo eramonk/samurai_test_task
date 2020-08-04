@@ -2,7 +2,7 @@
   (:require [clojure.java.jdbc :as sql]
                        ))
 (def db {:subprotocol "postgresql"
-         :subname "//localhost/patient"
+         :subname "//localhost/postgresdb"
          :user "admin"
          :password "admin"
          })
@@ -62,7 +62,8 @@
                ["first_name=? and last_name=? and father_name=? and policy_number=?"
                 first_name last_name father_name policy_number]))
 
-;;(add-patient! pat)
+(add-patient! pat)
+
 ;;(add-patient! pat2)
 ;;(add-patient! pat3)
 ;; (get-patients)
