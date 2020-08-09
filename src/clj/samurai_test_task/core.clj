@@ -1,18 +1,17 @@
-(ns samurai-test-task.core
+(ns clj.samurai-test-task.core
   (:gen-class)
   (:require [clojure.java.jdbc :as sql]
             [compojure.core :refer :all]
             [compojure.route :as route]
-            [ring.middleware.multipart-params :as multipart-params])
+            [ring.middleware.multipart-params :as multipart-params]
+            [selmer.parser :as selmer])
   (:use [ring.adapter.jetty]
-        [samurai-test-task.db.core]
+        [clj.samurai-test-task.db.core]
         [clojure.data.json :as json]))
 
 
 (defn all-patients [request]
-  ;;(json/write-str (get-patients))
-  (str request)
-  )
+  (json/write-str (get-patients)))
 
 (defn patient-json [{:keys [params]}]
   (json/write-str (get-patient (Integer. (:id params)))))
@@ -27,6 +26,7 @@
   (update-patient! (json/read-str (slurp (:body req)) :key-fn keyword)))
 
 (defroutes app-routes
+  ;;(GET "/" [] (selmer/render-file "templates/home.html" {:name "World"}))
   (GET "/patients" [] all-patients)
   (GET "/patient/:id" [] patient-json)
   (DELETE "/patient/:id" [] delete-patient)
@@ -35,13 +35,4 @@
 
 (defn -main [& args]
   (run-jetty app-routes {:port 3000}))
-
-
-
-
-
-
-
-
-
 

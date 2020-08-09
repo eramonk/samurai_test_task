@@ -13,10 +13,6 @@ spec:
         name: postgres
     spec:
       containers:
-        - name: web-server
-          image: eramonk/samurai_test_task:latest
-          ports:
-            - containerPort: 3000
         - name: postgres
           image: postgres
           imagePullPolicy: "IfNotPresent"
@@ -28,6 +24,10 @@ spec:
           volumeMounts:
             - mountPath: /var/lib/postgresql/data
               name: postgredb
+        - name: web-server
+          image: eramonk/samurai_test_task2:latest
+          ports:
+            - containerPort: 3000
       volumes:
         - name: postgredb
           persistentVolumeClaim:

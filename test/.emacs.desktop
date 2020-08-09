@@ -1,0 +1,343 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Sat Aug  8 15:36:21 2020
+;; Desktop file format version 208
+;; Emacs version 26.3
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (24366 40005 484542 924000) (desktop . "208") "ra@monk" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font-backend xft x) (font . "-SRC-Hack-normal-normal-normal-*-20-*-*-*-m-0-iso10646-1") (font-parameter . "Hack-12") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#A9B7C6") (background-color . "#2B2B2B") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha) (no-focus-on-map) (no-accept-focus) (fullscreen) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "#bbbbbb") (sticky) (environment) (frameset--id . "CD25-088B-28AD-1D97") (frameset--mini t . t) (height . 36) (width . 80) (modeline . t) (unsplittable) (left . 32) (top . 82) (icon-name) (display . ":0") (explicit-name)) ((min-height . 8) (min-width . 37) (min-height-ignore . 4) (min-width-ignore . 11) (min-height-safe . 2) (min-width-safe . 4) (min-pixel-height . 192) (min-pixel-width . 444) (min-pixel-height-ignore . 96) (min-pixel-width-ignore . 132) (min-pixel-height-safe . 48) (min-pixel-width-safe . 48)) hc (pixel-width . 976) (pixel-height . 840) (total-width . 81) (total-height . 35) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 324) (pixel-height . 840) (total-width . 27) (total-height . 35) (normal-height . 1.0) (normal-width . 0.32786885245901637) (parameters (window-side . left) (window-slot . 0)) (buffer " *NeoTree*" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated . t) (point . 718) (start . 354))) (vc (last . t) (pixel-width . 652) (pixel-height . 840) (total-width . 54) (total-height . 35) (normal-height . 1.0) (normal-width . 0.6721311475409836) (combination-limit . t) (leaf (pixel-width . 652) (pixel-height . 432) (total-width . 54) (total-height . 18) (normal-height . 0.5) (normal-width . 1.0) (buffer "samurai_test_task/db/core.clj" (selected) (hscroll . 0) (fringes 8 8 nil) (margins 3) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 2100) (start . 1714))) (leaf (last . t) (pixel-width . 652) (pixel-height . 408) (total-width . 54) (total-height . 17) (normal-height . 0.5) (normal-width . 1.0) (buffer "healthsamurai/db/core.clj" (selected) (hscroll . 0) (fringes 8 8 nil) (margins 3) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 2126) (start . 1848))))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring '("pos" "postgres" "deleqq" "post" "page-for" "home-page" "ref" "comm" "changq" "chang" "cider"))
+(setq register-alist '((113 file . "~/personal/questions.org") (108 file . "~/dropbox/public/sharing/learning.org") (67 file . "~/personal/calendar.org") (99 file . "~/code/dev/elisp-course.org") (103 file . "~/sachac.github.io/evil-plans/index.org") (73 file . "~/Dropbox/Inbox") (106 file . "~/personal/journal.org") (87 file . "~/Dropbox/public/sharing/blog.org") (119 file . "~/Dropbox/public/sharing/index.org") (101 file . "~/code/emacs-notes/tasks.org") (66 file . "~/Dropbox/books") (80 file . "~/personal/google-ideas.org") (112 file . "~/personal/google-inbox.org") (98 file . "~/personal/business.org") (115 file . "~/personal/sewing.org") (111 file . "~/clojure/my-app/src/my_app/core.clj") (105 file . "~/.emacs.d/init.el")))
+(setq file-name-history '("/home/ra/test_task/samurai_test_task/test" "~/test_task/healthsamurai/src/clj/healthsamurai/db/core.clj" "~/test_task/samurai_test_task/resources/hello.html" "~/test_task/samurai_test_task/resources/templates/hello.html" "~/test_task/samurai_test_task/src/clj/samurai_test_task/layout.clj" "~/test_task/samurai_test_task/resources/templates/base.html" "~/test_task/samurai_test_task/resources/templates/home.html" "~/test_task/samurai_test_task/src/samurai_test_task/cljs/core.cljs" "~/test_task/samurai_test_task/src/samurai_test_task/clj/core.clj" "~/test_task/samurai_test_task/postgres-service.yaml" "~/test_task/samurai_test_task/test.yaml" "~/test_task/samurai_test_task/postgres-deployment.yaml" "~/test_task/samurai_test_task/postgres-storage.yaml" "~/test_task/samurai_test_task/postgres-configmap.yaml" "~/test_task/samurai_test_task/k8s_samurai.yaml" "~/test_task/healthsamurai/src/healthsamurai/db/core.clj" "~/test_task/samurai_test_task/Dockerfile" "~/test_task/samurai_test_task/.git/Dockerfile" "~/test_task/" "~/test_task/Dockerfile" "~/test_task/samurai_test_task/src/samurai_test_task/db/core.clj" "~/test_task/samurai_test_task/src/samurai_test_task/db-util.clj" "~/test_task/samurai_test_task/src/samurai_test_task/db-util" "~/test_task/samurai_test_task/resources/migrations/" "~/test_task/samurai_test_task/migrations/20200730080350-delete_db.up.sql" "~/test_task/samurai_test_task/migrations/20200730080350-create_db.down.sql" "~/test_task/samurai_test_task/migrations/" "/migrations" "~/test_task/samurai_test_task/migrations" "~/test_task/migrations" "/home/ra/.emacs.d" "/home/ra/.emacs.d/init.el" "/home/ra/clojure/testproj/project.clj" "~/clojure/testproj/" "/home/ra/clojure/testproj/src/testproj/core.clj" "/home/ra/js/innbot/bot.js"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/home/ra/test_task/healthsamurai/src/clj/healthsamurai/db/core.clj"
+  "core.clj"
+  'clojure-mode
+  '(override-global-mode auto-compile-on-load-mode auto-complete-mode linum-mode paredit-mode rainbow-delimiters-mode undo-tree-mode)
+  2126
+  '(1 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-display-time 24366 39913 978999 841000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/ra/test_task/healthsamurai/src/clj/healthsamurai/handler.clj"
+  "handler.clj"
+  'clojure-mode
+  '(override-global-mode auto-compile-on-load-mode auto-complete-mode linum-mode paredit-mode rainbow-delimiters-mode undo-tree-mode)
+  240
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-display-time 24366 39903 839888 127000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/ra/test_task/samurai_test_task/src/clj/samurai_test_task/db/core.clj"
+  "core.clj"
+  'clojure-mode
+  '(override-global-mode auto-compile-on-load-mode auto-complete-mode linum-mode paredit-mode rainbow-delimiters-mode undo-tree-mode)
+  2100
+  '(1 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-display-time 24366 39897 609862 715000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/ra/test_task/healthsamurai/src/clj/healthsamurai/server.clj"
+  "server.clj"
+  'clojure-mode
+  '(override-global-mode auto-compile-on-load-mode auto-complete-mode linum-mode paredit-mode rainbow-delimiters-mode undo-tree-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-display-time 24366 39806 899215 416000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/ra/test_task/samurai_test_task/project.clj"
+  "project.clj"
+  'clojure-mode
+  '(override-global-mode auto-compile-on-load-mode auto-complete-mode linum-mode paredit-mode rainbow-delimiters-mode undo-tree-mode)
+  846
+  '(822 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-display-time 24366 39500 755309 509000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1130 712 1843))))
+
+(desktop-create-buffer 208
+  "/home/ra/test_task/samurai_test_task/src/cljs/samurai_test_task/core.cljs"
+  "core.cljs"
+  'clojurescript-mode
+  '(override-global-mode auto-compile-on-load-mode auto-complete-mode linum-mode paredit-mode rainbow-delimiters-mode undo-tree-mode)
+  185
+  '(294 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-display-time 24366 39289 192699 490000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/ra/test_task/samurai_test_task/resources/templates/home.html"
+  "home.html"
+  'mhtml-mode
+  '(override-global-mode auto-compile-on-load-mode linum-mode undo-tree-mode)
+  76
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24366 39271 984727 609000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/ra/test_task/samurai_test_task/resources/templates/base.html"
+  "base.html"
+  'mhtml-mode
+  '(override-global-mode auto-compile-on-load-mode linum-mode undo-tree-mode)
+  148
+  '(93 nil)
+  nil
+  nil
+  '((buffer-display-time 24366 39176 466915 920000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (93 148))))
+
+(desktop-create-buffer 208
+  "/home/ra/test_task/samurai_test_task/src/clj/samurai_test_task/core.clj"
+  "core.clj"
+  'clojure-mode
+  '(override-global-mode auto-compile-on-load-mode auto-complete-mode linum-mode paredit-mode rainbow-delimiters-mode undo-tree-mode)
+  921
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-display-time 24366 39116 197928 847000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/ra/test_task/healthsamurai/project.clj"
+  "project.clj"
+  'clojure-mode
+  '(override-global-mode auto-compile-on-load-mode auto-complete-mode linum-mode paredit-mode rainbow-delimiters-mode undo-tree-mode)
+  2475
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-display-time 24366 38036 662867 825000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/ra/test_task/healthsamurai/target/cljsbuild/public/js/app.js"
+  "app.js"
+  'js-mode
+  '(override-global-mode auto-compile-on-load-mode auto-complete-mode linum-mode undo-tree-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24366 38033 707365 335000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/ra/test_task/healthsamurai/src/cljs/healthsamurai/core.cljs"
+  "core.cljs"
+  'clojurescript-mode
+  '(override-global-mode auto-compile-on-load-mode auto-complete-mode linum-mode paredit-mode rainbow-delimiters-mode undo-tree-mode)
+  288
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-display-time 24366 37954 273207 663000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/ra/test_task/guestbook/project.clj"
+  "project.clj"
+  'clojure-mode
+  '(override-global-mode auto-compile-on-load-mode auto-complete-mode linum-mode paredit-mode rainbow-delimiters-mode undo-tree-mode)
+  1642
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-display-time 24366 37185 316157 127000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/ra/test_task/guestbook/resources/public/favicon.ico"
+  "favicon.ico"
+  'image-mode
+  '(override-global-mode auto-compile-on-load-mode linum-mode undo-tree-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24366 37069 307676 438000) (buffer-file-coding-system . no-conversion) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/ra/test_task/guestbook/resources/html/base.html"
+  "base.html"
+  'mhtml-mode
+  '(override-global-mode auto-compile-on-load-mode linum-mode undo-tree-mode)
+  24
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24366 37049 226758 108000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/ra/test_task/guestbook/resources/html/home.html"
+  "home.html"
+  'mhtml-mode
+  '(override-global-mode auto-compile-on-load-mode linum-mode undo-tree-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24366 37042 859610 734000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/ra/test_task/samurai_test_task/resources/templates/hello.html"
+  "hello.html"
+  'mhtml-mode
+  '(override-global-mode auto-compile-on-load-mode linum-mode undo-tree-mode)
+  191
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24366 36536 354024 72000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/ra/test_task/guestbook/Dockerfile"
+  "Dockerfile"
+  'fundamental-mode
+  '(override-global-mode auto-compile-on-load-mode linum-mode undo-tree-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24366 35748 812105 511000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/ra/test_task/guestbook/test/clj/guestbook/test/handler.clj"
+  "handler.clj"
+  'clojure-mode
+  '(override-global-mode auto-compile-on-load-mode auto-complete-mode linum-mode paredit-mode rainbow-delimiters-mode undo-tree-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-display-time 24366 35739 529113 720000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/ra/test_task/guestbook/test/clj/guestbook/test/db/core.clj"
+  "core.clj"
+  'clojure-mode
+  '(override-global-mode auto-compile-on-load-mode auto-complete-mode linum-mode paredit-mode rainbow-delimiters-mode undo-tree-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-display-time 24366 35736 277796 258000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/ra/test_task/guestbook/src/clj/guestbook/db/core.clj"
+  "core.clj"
+  'clojure-mode
+  '(override-global-mode auto-compile-on-load-mode auto-complete-mode linum-mode paredit-mode rainbow-delimiters-mode undo-tree-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-display-time 24366 35727 432108 40000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/ra/test_task/guestbook/src/clj/guestbook/handler.clj"
+  "handler.clj"
+  'clojure-mode
+  '(override-global-mode auto-compile-on-load-mode auto-complete-mode linum-mode paredit-mode rainbow-delimiters-mode undo-tree-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-display-time 24366 35720 838860 490000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/ra/test_task/healthsamurai/resources/public/css/site.css"
+  "site.css"
+  'css-mode
+  '(override-global-mode auto-compile-on-load-mode auto-complete-mode linum-mode undo-tree-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24366 32895 363469 26000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/ra/test_task/svg-test/src/svg_test/core.cljs"
+  "core.cljs"
+  'clojurescript-mode
+  '(override-global-mode auto-compile-on-load-mode auto-complete-mode linum-mode paredit-mode rainbow-delimiters-mode undo-tree-mode)
+  336
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-display-time 24366 29039 35171 742000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/ra/test_task/svg-test/resources/public/index.html"
+  "index.html"
+  'mhtml-mode
+  '(override-global-mode auto-compile-on-load-mode linum-mode undo-tree-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24366 29035 391790 939000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/ra/test_task/svg-test/dev/user.clj"
+  "user.clj"
+  'clojure-mode
+  '(override-global-mode auto-compile-on-load-mode auto-complete-mode linum-mode paredit-mode rainbow-delimiters-mode undo-tree-mode)
+  1388
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-display-time 24366 29016 936002 506000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/ra/test_task/svg-test/resources/public/css/style.css"
+  "style.css"
+  'css-mode
+  '(override-global-mode auto-compile-on-load-mode auto-complete-mode linum-mode undo-tree-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24366 29009 331806 387000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
