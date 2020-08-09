@@ -1,6 +1,7 @@
 (ns clj.samurai-test-task.db.core
   (:require [clojure.java.jdbc :as sql]
-                       ))
+            ))
+
 (def db {:subprotocol "postgresql"
          :subname "//localhost/postgresdb"
          :user "admin"
