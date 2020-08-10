@@ -16,25 +16,25 @@
                  [reagent "1.0.0-alpha2"]
                  ]
   :plugins [[migratus-lein "0.7.3"]
+            [lein-figwheel "0.5.18"]
             [lein-ring "0.12.5"]
-;;            [lein-cprop "1.0.3"]
-;;            [lein-cljsbuild "1.1.8"]
-            ]
-  ;; :resource-paths ["resources" "target/cljsbuild"]
-  ;; :target-path "target/%s/"
-  ;; :cljsbuild
-  ;; {:builds {:app {:source-paths ["src/cljs"]
-  ;;                 :compiler {:output-to  "target/cljsbuild/public/js/app.js"
-  ;;                            :output-dir "target/cljsbuild/public/js/out"
-  ;;                            :main "samurai-test-task.core"
-  ;;                            :asset-path "/js/out"
-  ;;                            :optimizations :none
-  ;;                            :source-map true
-  ;;                            :pretty-print true
-  ;;                            }}}}
-  ;; :clean-targets ^{:protect false} [:target-path
-  ;;                                   [:cljsbuild :builds :app :compiler :output-dir]
-  ;;                                   [:cljsbuild :builds :app :compiler :output-to]] 
+            [lein-cprop "1.0.3"]
+            [lein-cljsbuild "1.1.8"]]
+  :resource-paths ["resources" "target/cljsbuild"]
+  :target-path "target/%s/"
+  :cljsbuild
+  {:builds {:app {:source-paths ["src/cljs"]
+                  :compiler {:output-to  "target/cljsbuild/public/js/app.js"
+                             :output-dir "target/cljsbuild/public/js/out"
+                             :main "samurai-test-task.core"
+                             :asset-path "/js/out"
+                             :optimizations :none
+                             :source-map true
+                             :pretty-print true
+                             }}}}
+  :clean-targets ^{:protect false} [:target-path
+                                    [:cljsbuild :builds :app :compiler :output-dir]
+                                    [:cljsbuild :builds :app :compiler :output-to]]
   :ring {:handler ring.core/handler}
   :migratus {:store :database
            :migration-dir "resources/migrations"

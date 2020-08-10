@@ -6,6 +6,8 @@ kubectl get events --sort-by=.metadata.creationTimestamp
 
 psql -U admin -d postgresdb
 
-kubectl exec -i -t postgres-6764ddfd9d-mpltd --container samurai -- /bin/bash
+##Зайти на вторую машину в поде и запустить lein migratus migrate
+kubectl describe pods
+kubectl exec -i -t <pod name> --container samurai -- /bin/bash
 
 

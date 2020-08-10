@@ -28,7 +28,7 @@
   (update-patient! (json/read-str (slurp (:body req)) :key-fn keyword)))
 
 (defroutes app-routes
-  ;;(GET "/" [] (selmer/render-file "templates/home.html" {:name "World"}))
+  (GET "/" [] (selmer/render-file "templates/home.html" {}))
   (GET "/patients" [] all-patients)
   (GET "/patient/:id" [] patient-json)
   (DELETE "/patient/:id" [] delete-patient)
