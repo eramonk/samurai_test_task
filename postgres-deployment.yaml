@@ -3,32 +3,40 @@ kind: Deployment
 metadata:
   name: postgres
 spec:
-  replicas: 1
   selector:
     matchLabels:
-      name: postgres
+      app: postgres
   template:
     metadata:
       labels:
-        name: postgres
+        app: postgres
     spec:
       containers:
-        - name: postgres
-          image: postgres
-          imagePullPolicy: "IfNotPresent"
-          ports:
-            - containerPort: 5432
-          envFrom:
-            - configMapRef:
-                name: postgres-config
-          volumeMounts:
-            - mountPath: /var/lib/postgresql/data
-              name: postgredb
-        - name: web-server
-          image: eramonk/samurai_test_task2:latest
-          ports:
-            - containerPort: 3000
-      volumes:
-        - name: postgredb
-          persistentVolumeClaim:
-            claimName: postgres-pv-claim
+      - name: postgres
+        image: postgres:9.6.5
+        ports:
+        - containerPort: 5432
+        env:
+        - name: POSTGRES_DB
+          value: postgresdb
+        - name: POSTGRES_USER
+          value: admin
+        - name: POSTGRES_PASSWORD
+          value: admin
+      - image: eramonk/samurai_test_task:latest
+        name: samurai
+        command: ["lein"]
+        args: ["migratus", "migrate"]
+        env:
+        - name: POSTGRES_HOST
+          value: postgres
+        - name: POSTGRES_PORT
+          value: "5432"
+        - name: POSTGRES_DATABASE
+          value: postgresdb
+        - name: POSTGRES_USER
+          value: admin
+        - name: POSTGRES_PASSWORD
+          value: admin
+        ports:
+        - containerPort: 3000

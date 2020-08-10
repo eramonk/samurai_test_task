@@ -2,14 +2,10 @@
 
 ## Usage
 
-Создание docker image
-docker build -t healthsamurai .
-
-Запуск контейнера
-docker run -it --rm --network=host --name runningsamurai healthsamurai
-
 kubectl get events --sort-by=.metadata.creationTimestamp
 
-Api доступно на localhost:3000
+psql -U admin -d postgresdb
+
+kubectl exec -i -t postgres-6764ddfd9d-mpltd --container samurai -- /bin/bash
 
 

@@ -11,8 +11,9 @@
 
 
 (defn all-patients [request]
-;;  (json/write-str (get-patients))
-  (str request))
+  (json/write-str (get-patients))
+;;  (str request)
+  )
 
 (defn patient-json [{:keys [params]}]
   (json/write-str (get-patient (Integer. (:id params)))))
