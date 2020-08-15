@@ -14,34 +14,15 @@
                  [org.clojure/data.json "1.0.0"]
                  [selmer "1.12.28"]
                  [reagent "1.0.0-alpha2"]
-                 [cljs-ajax "0.8.0"]
-                 [reagent-forms "0.5.44"]
                  ]
   :plugins [[migratus-lein "0.7.3"]
-;;          [lein-figwheel "0.5.18"]
+            [lein-figwheel "0.5.18"]
             [lein-ring "0.12.5"]
-;;            [lein-cprop "1.0.3"]
+            [lein-cprop "1.0.3"]
             [lein-cljsbuild "1.1.8"]]
-  :resource-paths ["resources" "target/cljsbuild" "resources/public/js/compiled"]
+  :resource-paths ["resources" "target/cljsbuild"]
   :target-path "target/%s/"
-
-  :clean-targets ^{:protect false} ["resources/public/js/compiled" "target" "test/js"]
-
-  :cljsbuild {:builds [{:id "prod"
-                        :source-paths ["src/cljs"]
-                        :compiler {:output-to "resources/public/js/compiled/app.js"
-                                   :optimizations :advanced
-                                   :pretty-print false}}
-                       {:id "dev"
-                        :source-paths ["src/cljs"]
-                        :compiler {:output-to "resources/public/js/compiled/app.js"
-                                   :output-dir "resources/public/js/compiled/out"
-                                   :main samurai-test-task.core
-                                   :asset-path "/js/out"
-                                   :optimizations :advanced
-                                   :pretty-print false}}]}
-  
-#_#_#_#_  :cljsbuild
+  :cljsbuild
   {:builds {:app {:source-paths ["src/cljs"]
                   :compiler {:output-to  "target/cljsbuild/public/js/app.js"
                              :output-dir "target/cljsbuild/public/js/out"
