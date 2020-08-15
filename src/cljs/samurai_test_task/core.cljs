@@ -82,7 +82,7 @@
                               ", Born date - " (:born_date item)
                               ", Sex - " (:sex item)
                               ", Address - " (:address item)
-                              ", Policy number - " (:policy_number item) "  "])]])
+                              ", Policy number " (:policy_number item) "  "])]])
 
 (defn row [label input]
   [:div.row
@@ -158,11 +158,12 @@
    [lister @pat-list]])
 
 
-;; (defn ^:export main []
-;;   (rd/render [form]
-;;                   (.getElementById js/document "app")))
+(defn ^:export main []
+  (rd/render [lister-user]
+                  (.getElementById js/document "app")))
 
 
-(rd/render [lister-user] (.getElementById js/document "app"))
+;;(rd/render [lister-user] (.getElementById js/document "app"))
+
 
 
