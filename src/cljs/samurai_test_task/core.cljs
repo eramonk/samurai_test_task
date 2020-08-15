@@ -8,50 +8,6 @@
   [ds]
   (.stringify js/JSON (clj->js ds)))
 
-;; (defn lister-user []
-;;   [:div
-;;    (ajx/GET "/patients"
-;;        {:handler (fn [patients]
-;;                    (.warn js/console (str patients))
-;;                    (.warn js/console (str @state))
-;;                    (swap! state into patients)
-;;                    (.warn js/console (str @state))
-;;                    )
-;;                    :error-handler (fn [details] (.warn js/console (str "Failed to refresh phones from server: " details)))
-;;                    :response-format :json, :keywords? true})
-;;    "Here is a list:"
-
-;;    ;;[lister]
-;;    ])
-
-
-;; (defn jsx->clj
-;;   [x]
-;;   (into {} (for [k (.keys js/Object x)] [k (aget x k)])))
-
-
-(def patients-list (r/atom [{:first_name "Ramon"
-                             :last_name "Akh"
-                             :father_name "Rinatovich"
-                             :born_date "17/06/1983"
-                             :sex "M"
-                             :address "Ozero Lenevoe 66"
-                             :policy_number 1}
-                            {:first_name "Ramon"
-                             :last_name "Akh"
-                             :father_name "Rinatovich"
-                             :born_date "17/06/1983"
-                             :sex "M"
-                             :address "Ozero Lenevoe 66"
-                             :policy_number 2}
-                            {:first_name "Ramon"
-                             :last_name "Akh"
-                             :father_name "Rinatovich"
-                             :born_date "17/06/1983"
-                             :sex "M"
-                             :address "Ozero Lenevoe 66"
-                             :policy_number 3}]))
-
 (def pat-list (r/atom #{}))
 
 (defn get-patient-list []
