@@ -9,7 +9,6 @@
         [clj.samurai-test-task.db.core]
         [clojure.data.json :as json]))
 
-
 (defn all-patients [request]
   (json/write-str (get-patients))
 ;;  (str request)
@@ -28,13 +27,18 @@
   (update-patient! (json/read-str (slurp (:body req)) :key-fn keyword)))
 
 (defroutes app-routes
-  (GET "/" [] (selmer/render-file "templates/home.html" {}))
+;;  (GET "/" [] (selmer/render-file "public/index.html" {}))
+  (GET "/" [] (constantly {:body (slurp "resources/public/index.html") :status 200}))
+;;  (route/resources "/")
   (GET "/patients" [] all-patients)
   (GET "/patient/:id" [] patient-json)
   (DELETE "/patient/:id" [] delete-patient)
   (POST "/patient/create" [] create-patient)
   (POST "/patient/update" [] update-patient))
 
+(def my-routes
+  (routes #'app-routes (route/resources "/")))
+
 (defn -main [& args]
-  (run-jetty app-routes {:port 3000}))
+  (run-jetty my-routes {:port 3000}))
 
