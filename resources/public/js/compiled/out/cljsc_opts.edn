@@ -1,0 +1,1 @@
+{:output-wrapper true, :externs ["closure-js/externs"], :libs ["closure-js/libs"], :output-to "resources/public/js/compiled/app.js", :output-dir "resources/public/js/compiled/out", :main samurai-test-task.core, :asset-path "/js/out", :optimizations :advanced}
